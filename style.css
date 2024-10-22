@@ -9,7 +9,7 @@ body {
   justify-content: center;
 }
 
-.header {
+.botao {
   font-family: "Montserrat", sans-serif;
   color: white;
   text-align: center;
@@ -20,6 +20,12 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   font-size: 1.25rem;
   max-width: 12.5rem;
+  display: flex;
+  cursor: pointer;
+}
+
+.botao:hover{
+  background-color: rgb(132, 40, 148);
 }
 
 p {
@@ -43,6 +49,7 @@ p {
   width: 12.5rem;
   height: 12.5rem;
   display: flex;
+  border: 2px solid rgb(24, 23, 23);
 }
 
 .imagem-gatos {
@@ -54,6 +61,7 @@ p {
 
 .imagem {
   margin: 0;
+  cursor: pointer;
 }
 
 figcaption {
@@ -64,3 +72,19 @@ figcaption {
   text-align: center;
 }
 
+.imagem:hover figcaption{
+  filter: brightness(2)
+}
+
+.imagem:hover img{
+  border: 2px solid #fff;
+}
+
+.adicionar {
+  opacity: 0.5;
+  filter: grayscale(100%);
+}
+
+.adicionar:hover{
+  opacity: 1;
+}
